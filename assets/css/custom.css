@@ -1,5 +1,17 @@
 /* Custom styles for Jennifer Mead's site (kept separate from the template's main.css) */
 
+/* Teaching subpage titles: let long titles wrap instead of running past the margins.
+   (The template sets width: max-content on .major headings, which prevents wrapping.)
+   Scoped to the four subpages only, so nothing else on the site changes. */
+#teaching-statement h2.major,
+#teaching-materials h2.major,
+#teaching-impact h2.major,
+#teaching-experience h2.major {
+	width: -moz-fit-content;
+	width: fit-content;
+	max-width: 100%;
+}
+
 /* Teaching subpage cards */
 .subpage-grid {
 	display: grid;
