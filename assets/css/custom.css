@@ -96,9 +96,22 @@
 	margin: 0 0 1rem 0;
 }
 
+/* Odd tile out (e.g. the 3rd of 3): span both columns and center it at
+   single-tile width, so three tiles form a triangle instead of an L. */
+.impact-stats > .impact-stat:last-child:nth-child(odd) {
+	grid-column: 1 / -1;
+	justify-self: center;
+	width: calc((100% - 1.25rem) / 2);
+	box-sizing: border-box;
+}
+
 @media screen and (max-width: 480px) {
 	.impact-stats {
 		grid-template-columns: 1fr;
+	}
+
+	.impact-stats > .impact-stat:last-child:nth-child(odd) {
+		width: 100%;
 	}
 }
 
