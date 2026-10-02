@@ -77,3 +77,93 @@
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 }
+
+/* ---------- Impact subpage ---------- */
+
+/* Let the h3.major section headings wrap too */
+#teaching-impact h3.major {
+	width: -moz-fit-content;
+	width: fit-content;
+	max-width: 100%;
+	margin-top: 2.5rem;
+}
+
+/* Stat tiles: same look as the subpage cards */
+.impact-stats {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.25rem;
+	margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 480px) {
+	.impact-stats {
+		grid-template-columns: 1fr;
+	}
+}
+
+.impact-stat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1.25rem 1rem;
+	border: solid 1px rgba(255, 255, 255, 0.35);
+	border-radius: 4px;
+}
+
+.impact-number {
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 1.1;
+	letter-spacing: 0.05rem;
+	color: #ffffff;
+}
+
+.impact-number small {
+	font-size: 1rem;
+	font-weight: 300;
+	opacity: 0.7;
+	margin-left: 0.1rem;
+}
+
+.impact-label {
+	margin-top: 0.6rem;
+	font-size: 0.75rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.impact-detail {
+	margin-top: 0.4rem;
+	font-size: 0.8rem;
+	line-height: 1.5;
+	opacity: 0.65;
+}
+
+.impact-note {
+	font-size: 0.8rem;
+	font-style: italic;
+	opacity: 0.65;
+}
+
+/* Student quotes */
+.impact-quote {
+	font-style: italic;
+	margin: 0 0 1.75rem 0;
+}
+
+.impact-quote cite {
+	display: block;
+	margin-top: 0.5rem;
+	font-style: normal;
+	font-size: 0.7rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	opacity: 0.65;
+}
+
+.impact-quote cite:before {
+	content: "\2014\00a0Student, ";
+}
